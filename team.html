@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team - Hot Beans Web</title>
+  <style>
+    body {
+      background-color: #faedd7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar Styles */
+    header {
+      background-color: #D4B084;
+      height: 118px;
+      width: 100%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      height: 100%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #6D4B37;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 20px;
+    }
+
+    /* Logo */
+    .logo img {
+      height: 110px;
+    }
+
+    /* Team Section */
+    #team {
+      text-align: center;
+      padding: 50px 20px;
+      color: #6D4B37;
+    }
+
+    #team h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #team .team-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px; /* Space between the boxes */
+      flex-wrap: nowrap; /* Ensure they don't wrap to the next line */
+      padding: 0 20px;
+    }
+
+    .team-member {
+      width: 24%; /* Set each box to 24% to fit 4 in a row */
+      background-color: #eedbb6;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .team-member img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .team-member h3 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #6D4B37;
+    }
+
+    .team-member p {
+      font-size: 14px;
+      color: #6D4B37;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    #team a {
+      display: inline-block;
+      background-color: #D4B084;
+      color: #6D4B37;
+      padding: 15px 30px;
+      font-size: 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+
+    #team a:hover {
+      background-color: #6D4B37;
+      color: white;
+    }
+
+    @media (max-width: 1024px) {
+      .team-member {
+        width: 23%; /* Adjust slightly for medium-sized screens */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .team-member {
+        width: 48%; /* 2 boxes per row on smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .team-member {
+        width: 100%; /* Stack all boxes vertically on very small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Hot Beans Web Logo" />
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="apply.html">Apply</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contacts.html">Contacts</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Team Section -->
+  <section id="team">
+    <h1>Meet Our Team</h1>
+
+    <div class="team-container">
+      <div class="team-member">
+        <img src="girl1.png.png" alt="Isha Patel">
+        <h3>Isha Patel</h3>
+        <p>Front-End Developer</p>
+        <p>Isha is passionate about front-end development and UI/UX design. She enjoys creating responsive websites and is currently mastering React.</p>
+      </div>
+
+      <div class="team-member">
+        <img src="man1.png.png" alt="Liam Roberts">
+        <h3>Liam Roberts</h3>
+        <p>Back-End Developer</p>
+        <p>Liam has a strong interest in server-side logic and databases. He’s currently working on Python-based tools to improve our project infrastructure.</p>
+      </div>
+
+      <div class="team-member">
+        <img src="girl2.png.png" alt="Emily Chen">
+        <h3>Emily Chen</h3>
+        <p>UI/UX Developer</p>
+        <p>Emily excels at blending creativity with code. She transforms wireframes into engaging, user-friendly interfaces.</p>
+      </div>
+
+      <div class="team-member">
+        <img src="man2.png.png" alt="Daniel Okoro">
+        <h3>Daniel Okoro</h3>
+        <p>QA & Testing</p>
+        <p>Daniel is detail-oriented and a natural problem-solver. He focuses on testing, debugging, and ensuring every site runs smoothly.</p>
+      </div>
+    </div>
+
+    <!-- Fixed link to the jobs page -->
+    <a href="jobs.html">Join Our Team</a>
+  </section>
+
+</body>
+</html>
